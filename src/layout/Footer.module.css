@@ -1,0 +1,66 @@
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 99.5%;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.footerInfo p {
+    margin-top: 0.5rem;
+    font-size: 1rem;
+}
+
+.socialLinks {
+    display: flex;
+    justify-content: center;
+}
+
+.socialLinks li {
+    list-style: none;
+    margin: 0 0.5rem;
+    padding: 0 0.5rem;
+    font-size: 1.5rem;
+}
+
+.socialLinks li:first-child {
+    margin-left: 0;
+    padding-left: 0;
+}
+
+.socialLinks :last-child {
+    margin-right: 0;
+    padding-right: 0;
+}
+
+.socialLinks li a i {
+    color: #fff;
+    transition: all .5s ease;
+}
+
+.socialLinks .insta:hover i{
+    transform: scale(1.5);
+}
+.socialLinks .linkedin:hover i{
+    transform: scale(1.5);
+}
+.socialLinks .discord:hover i{
+    transform: scale(1.5);
+}
+.socialLinks .github:hover i{
+    transform: scale(1.5);
+}
+
+@media (max-width: 700px) {
+    .footer {
+        display: flex;
+        flex-direction: column;
+        margin: 0 0;
+    }
+    .footerInfo {
+        justify-content: center;
+    }
+    .social {
+        justify-content: center;
+    }
+}

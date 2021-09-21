@@ -1,8 +1,15 @@
+import { Fragment } from "react";
+import Footer from "./layout/Footer";
+import Header from "./layout/Header";
 import Home from "./pages/Home";
 
 function App() {
   return (
-    <Home />
+    <Fragment>
+      <Header />
+      <Home />
+      <Footer />
+    </Fragment>
   );
 }
 

@@ -1,0 +1,13 @@
+.navbar {
+    display: flex;
+    margin: 1rem 5rem;
+}
+
+.logo {
+    margin: 0.5rem 0.3rem;
+    margin-right: 1rem;
+}
+
+.logo i {
+    font-size: 2rem;
+}
