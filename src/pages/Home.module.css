@@ -1,0 +1,145 @@
+.homeContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    margin: 3rem 5rem;
+    margin-top: 10rem;
+}
+
+.homeInfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.homeInfo h3 {
+    font-size: 2rem;
+    font-weight: 800;
+}
+
+.homeInfo p {
+    margin-top: 1rem;
+    color: black;
+    font-size: 1.5rem;
+}
+
+.homeButtons {
+    margin: 2rem 0;
+}
+
+.homeButtons button {
+    padding: 0.9rem 0.5rem;
+    width: 30%;
+    border-radius: 15px;
+    border: none;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.homeButtons button i {
+    margin-right: 0.5rem;
+}
+
+.upload {
+    margin-right: 1rem;
+    transition: all 1s ease;
+}
+
+.upload:hover {
+    color: #fff;
+    background-color: #000;
+    transition: all 1s ease;
+}
+
+.download {
+    color: #fff;
+    background-color: #000;
+    transition: all 1s ease;
+}
+
+.download:hover {
+    color: #000;
+    background-color: #fff;
+    transition: all 1s ease;
+}
+
+.homeImg {
+    display: flex;
+    justify-content: center;
+}
+
+.homeImg img {
+    width: 75%;
+}
+
+@media (max-width: 1155px) {
+    .homeInfo h3 {
+        font-size: 1.5rem;
+    }
+    
+    .homeInfo p {
+        font-size: 1.2rem;
+    }
+
+    .homeButtons button {
+        width: 35%;
+    }
+
+    .homeImg img {
+        width: 80%;
+    }
+    
+}
+
+@media (max-width: 990px) {
+    .homeContainer {
+        margin-bottom: 0;
+    }
+    .homeButtons button {
+        font-size: 1rem;
+    }
+    .homeImg img {
+        width: 85%;
+    }
+}
+
+@media (max-width: 906px) {
+    .homeInfo h3 {
+        font-size: 1.2rem;
+    }
+    
+    .homeInfo p {
+        font-size: 1rem;
+    }
+    .homeButtons button {
+        padding: 0.9rem 0rem;
+        font-size: 0.7rem;
+    }
+    .homeImg img {
+        width: 90%;
+    }
+}
+
+@media (max-width: 760px) {
+    .homeContainer {
+        display: flex;
+        flex-direction: column;
+        margin: 3rem 3rem;
+        margin-top: 10rem;
+    }
+    .homeInfo {
+        display: flex;
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+    .homeImg img {
+        width: 70%;
+    }
+}
+
+@media (max-width: 412px) {
+    .homeImg img {
+        width: 80%;
+    }
+}

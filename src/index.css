@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+*::selection {
+  background: #cac8ab73;
+}
+html::-webkit-scrollbar {
+  width: 0.5rem;
+}
+html::-webkit-scrollbar-track {
+  background: #222;
+}
+html::-webkit-scrollbar-thumb {
+  background: #7856FF;
+  border-radius: 20px;
+}
+body {
+  background: linear-gradient(to left,#738DF3 0%, #4E54AF 100%);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #fff;
+  font-family: poppins, Verdana, Geneva, Tahoma, sans-serif;
+}
