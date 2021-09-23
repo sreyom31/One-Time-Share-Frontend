@@ -1,0 +1,50 @@
+
+.total {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-weight:100;
+    font-size: 1rem;
+    margin: 1rem 0;
+    flex-direction: column;
+  }
+  .total p{
+    margin-top: 0.8rem;
+    color:#ff0505;
+    text-align: start;
+  }
+  .total h3{
+    color:#05ffa1;
+  }
+  
+  
+  .actions {
+    text-align: right;
+  }
+  
+  .actions button {
+    font: inherit;
+    cursor: pointer;
+    background-color: #05ffa1;
+    border: none;
+    border-radius: 24px;
+    padding: 0.5rem 2rem;
+    margin-left: 1rem;
+  }
+  
+  .actions button:hover,
+  .actions button:active {
+    color: #000;
+  }
+
+  .Head{
+    color: #ffffff;
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding-bottom: 4px;
+    border-bottom: 2px solid #fcfcfc;
+  }
+
+  span, a {
+    color: white;
+  }

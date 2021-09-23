@@ -1,17 +1,37 @@
-import { Fragment } from "react";
+import React, { Suspense } from 'react';
+import { Route, Switch, Redirect, BrowserRouter} from 'react-router-dom';
 import FileUpload from "./components/FileUpload";
-import Footer from "./layout/Footer";
-import Header from "./layout/Header";
+import LoadingSpinner from "./components/LoadingSpinner"
+import Layout from "./layout/Layout";
+
 import Home from "./pages/Home";
 
 function App() {
   return (
-    <Fragment>
-      <Header />
-      {/* <Home /> */}
-      <FileUpload />
-      <Footer />
-    </Fragment>
+    <BrowserRouter>
+  <Layout>
+  <Suspense
+    fallback={
+      <div className='centered'>
+        <LoadingSpinner />
+      </div>
+    }
+  >
+  <Switch>
+        <Route path='/' exact>
+          <Redirect to='/home' />
+        </Route>
+        <Route path='/home' exact>
+          <Home />
+        </Route>
+        <Route path='/load/:id'>
+          <FileUpload />
+        </Route>
+        
+      </Switch>
+  </Suspense>
+</Layout>
+</BrowserRouter>
   );
 }
 

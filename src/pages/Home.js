@@ -1,4 +1,5 @@
 import { Fragment } from "react";
+import {Link} from "react-router-dom"
 import classes from "./Home.module.css";
 
 import link from "../images/link.svg";
@@ -14,12 +15,12 @@ const Home = () => {
             </h3>
             <p>Easily share files with anyone, access anywhere and anytime.</p>
             <div className={classes.homeButtons}>
-              <button className={classes.upload}><i class="fas fa-cloud-upload-alt"></i>Upload</button>
-              <button className={classes.download}><i class="fas fa-cloud-download-alt"></i>Download</button>
+              <Link to="/load/u"><button className={classes.upload}><i className="fas fa-cloud-upload-alt"></i>Upload</button></Link>
+              <Link to="/load/d"><button className={classes.download}><i className="fas fa-cloud-download-alt"></i>Download</button></Link>
             </div>
           </div>
           <div className={classes.homeImg}>
-            <img src={link} alt="image" />
+            <img src={link} alt="fielIcon"/>
           </div>
         </div>
       </section>

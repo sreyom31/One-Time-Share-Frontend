@@ -1,4 +1,4 @@
-import { Fragment } from "react";
+import React from "react";
 import classes from "./Footer.module.css";
 const Footer = () => {
   return (
@@ -41,7 +41,7 @@ const Footer = () => {
       </div>
       <div className={classes.footerInfo}>
         <p>
-          Made with <i class="fas fa-heart" style={{ color: "red" }}></i> by
+          Made with <i className="fas fa-heart" style={{ color: "red" }}></i> by
           Sreyom
         </p>
       </div>
