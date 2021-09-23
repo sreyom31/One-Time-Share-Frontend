@@ -35,8 +35,13 @@ const FileUpload = () => {
     history.push('/load/d') 
   }
   const fileChangeHandler=(e)=>{
-    setFile(e.target.files[0]);
-    setFilename(e.target.files[0].name);
+    if(e.target.files[0].size < 1024*1024*10) {
+      setFile(e.target.files[0]);
+      setFilename(e.target.files[0].name);
+    }
+    else {
+      window.alert('File Size Exceeded!!!')
+    }
   }
   const modalChangeHandler = () => {
     setModal(false);
